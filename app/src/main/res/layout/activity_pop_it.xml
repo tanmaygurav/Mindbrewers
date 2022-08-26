@@ -10,15 +10,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/idPopperView"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_alignParentBottom="true">
+        android:layout_height="300dp">
 
         <ImageView
-            android:id="@+id/idPop21"
+            android:id="@+id/idPop1"
             android:layout_width="36dp"
             android:layout_height="34dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
@@ -32,16 +31,16 @@
             app:layout_constraintVertical_bias="0.109" />
 
         <ImageView
-            android:id="@+id/idPop22"
+            android:id="@+id/idPop2"
             android:layout_width="36dp"
             android:layout_height="34dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/rered"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -50,16 +49,16 @@
             app:layout_constraintVertical_bias="0.979" />
 
         <ImageView
-            android:id="@+id/idPop23"
+            android:id="@+id/idPop3"
             android:layout_width="36dp"
             android:layout_height="34dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/bl"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.69"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -68,16 +67,16 @@
             app:layout_constraintVertical_bias="0.467" />
 
         <ImageView
-            android:id="@+id/idPop24"
+            android:id="@+id/idPop4"
             android:layout_width="36dp"
             android:layout_height="34dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/pur"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.09"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -86,16 +85,16 @@
             app:layout_constraintVertical_bias="0.719" />
 
         <ImageView
-            android:id="@+id/idPop1"
+            android:id="@+id/idPop5"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/ye"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -104,11 +103,11 @@
             app:layout_constraintVertical_bias="0.427" />
 
         <ImageView
-            android:id="@+id/idPop2"
+            android:id="@+id/idPop6"
             android:layout_width="54dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
@@ -122,16 +121,16 @@
             app:layout_constraintVertical_bias="0.108" />
 
         <ImageView
-            android:id="@+id/idPop4"
+            android:id="@+id/idPop7"
             android:layout_width="54dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/rered"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.714"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -140,16 +139,16 @@
             app:layout_constraintVertical_bias="0.769" />
 
         <ImageView
-            android:id="@+id/idPop14"
+            android:id="@+id/idPop8"
             android:layout_width="54dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/bl"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.246"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -158,16 +157,16 @@
             app:layout_constraintVertical_bias="0.108" />
 
         <ImageView
-            android:id="@+id/idPop15"
+            android:id="@+id/idPop9"
             android:layout_width="54dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/ye"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.095"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -176,11 +175,11 @@
             app:layout_constraintVertical_bias="0.973" />
 
         <ImageView
-            android:id="@+id/idPop16"
+            android:id="@+id/idPop10"
             android:layout_width="54dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
@@ -194,16 +193,16 @@
             app:layout_constraintVertical_bias="0.43" />
 
         <ImageView
-            android:id="@+id/idPop26"
+            android:id="@+id/idPop11"
             android:layout_width="66dp"
             android:layout_height="61dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/ye"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.044"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -212,16 +211,16 @@
             app:layout_constraintVertical_bias="0.117" />
 
         <ImageView
-            android:id="@+id/idPop27"
+            android:id="@+id/idPop12"
             android:layout_width="66dp"
             android:layout_height="61dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/bl"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.281"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -230,16 +229,16 @@
             app:layout_constraintVertical_bias="0.821" />
 
         <ImageView
-            android:id="@+id/idPop17"
+            android:id="@+id/idPop13"
             android:layout_width="54dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/ye"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.865"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -248,16 +247,16 @@
             app:layout_constraintVertical_bias="0.46" />
 
         <ImageView
-            android:id="@+id/idPop18"
+            android:id="@+id/idPop14"
             android:layout_width="36dp"
             android:layout_height="34dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/pur"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.536"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -266,11 +265,11 @@
             app:layout_constraintVertical_bias="0.784" />
 
         <ImageView
-            android:id="@+id/idPop20"
+            android:id="@+id/idPop15"
             android:layout_width="36dp"
             android:layout_height="34dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
@@ -283,16 +282,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/idPop3"
+            android:id="@+id/idPop16"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/pur"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -301,11 +300,11 @@
             app:layout_constraintVertical_bias="0.427" />
 
         <ImageView
-            android:id="@+id/idPop25"
+            android:id="@+id/idPop17"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
@@ -319,16 +318,16 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
-            android:id="@+id/idPop28"
+            android:id="@+id/idPop18"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerInParent="true"
-
+            android:hapticFeedbackEnabled="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/ora"
+            android:src="@drawable/bl"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.948"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -337,47 +336,48 @@
             app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/idPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idPopperView"/>
+<!--        android:src="@mipmap/ic_launcher"/>-->
 
 
     <TextView
         android:id="@+id/idOneLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OneLine"
+        android:layout_below="@id/idPerson"
+        android:text="Pop It"
         android:textAlignment="center"
-        android:textSize="48sp"
-        android:layout_above="@id/idPopperView" />
+        android:textSize="48sp" />
 
     <TextView
         android:id="@+id/idDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Description"
-        android:textAlignment="center"
-        android:layout_above="@id/idOneLine" />
+        android:layout_below="@id/idOneLine"
+        android:text="By Mindbrewers"
+        android:textAlignment="center" />
 
-    <TextView
+    <Button
         android:id="@+id/idNext"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
 
-    <TextView
+    <Button
         android:id="@+id/idPlayAgain"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Play Again"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_above="@id/idNext"
+         />
 
 </RelativeLayout>

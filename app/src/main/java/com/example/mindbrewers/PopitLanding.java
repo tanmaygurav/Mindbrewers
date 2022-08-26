@@ -3,8 +3,10 @@ package com.example.mindbrewers;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class PopitLanding extends AppCompatActivity {
     private ImageView popItLanding;
@@ -19,5 +21,17 @@ public class PopitLanding extends AppCompatActivity {
         popItLanding.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),PopIt.class));
         });
+
+        //                Buzzer code
+        MediaPlayer mp= MediaPlayer.create(this,R.raw.page);
+        try {
+//            mp.prepare();
+            mp.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(),"error in audio : "+e,Toast.LENGTH_SHORT).show();
+        }
+//        End Buzzer code
+
     }
 }

@@ -2,19 +2,27 @@ package com.example.mindbrewers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PopIt extends AppCompatActivity {
     private ImageView pop1,pop2,pop3,pop4,pop5,pop6,pop7,pop8,pop9,pop10,pop11,pop12,pop13,pop14,pop15,pop16,pop17,pop18;
-    private TextView oneLine,description,next,play;
+    private TextView oneLine,description;
     private List<String> benefitsHeader,benefitsDescription;
+    private Button next,play;
+    private Vibrator vibrator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +33,20 @@ public class PopIt extends AppCompatActivity {
         pop2=findViewById(R.id.idPop2);
         pop3=findViewById(R.id.idPop3);
         pop4=findViewById(R.id.idPop4);
+        pop5=findViewById(R.id.idPop5);
+        pop6=findViewById(R.id.idPop6);
+        pop7=findViewById(R.id.idPop7);
+        pop8=findViewById(R.id.idPop8);
+        pop9=findViewById(R.id.idPop9);
+        pop10=findViewById(R.id.idPop10);
+        pop11=findViewById(R.id.idPop11);
+        pop12=findViewById(R.id.idPop12);
+        pop13=findViewById(R.id.idPop13);
+        pop14=findViewById(R.id.idPop14);
+        pop15=findViewById(R.id.idPop15);
+        pop16=findViewById(R.id.idPop16);
+        pop17=findViewById(R.id.idPop17);
+        pop18=findViewById(R.id.idPop18);
 //        TODO:Create and find pop till 18 in xml file
 
         oneLine=findViewById(R.id.idOneLine);
@@ -35,6 +57,7 @@ public class PopIt extends AppCompatActivity {
 
 //      18 benefits
         getData();
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
 
         play.setOnClickListener(v->{
@@ -42,7 +65,31 @@ public class PopIt extends AppCompatActivity {
             pop2.setVisibility(View.VISIBLE);
             pop3.setVisibility(View.VISIBLE);
             pop4.setVisibility(View.VISIBLE);
+            pop5.setVisibility(View.VISIBLE);
+            pop6.setVisibility(View.VISIBLE);
+            pop7.setVisibility(View.VISIBLE);
+            pop8.setVisibility(View.VISIBLE);
+            pop9.setVisibility(View.VISIBLE);
+            pop10.setVisibility(View.VISIBLE);
+            pop11.setVisibility(View.VISIBLE);
+            pop12.setVisibility(View.VISIBLE);
+            pop13.setVisibility(View.VISIBLE);
+            pop14.setVisibility(View.VISIBLE);
+            pop15.setVisibility(View.VISIBLE);
+            pop16.setVisibility(View.VISIBLE);
+            pop17.setVisibility(View.VISIBLE);
+            pop18.setVisibility(View.VISIBLE);
         });
+//                Buzzer code
+        MediaPlayer mp= MediaPlayer.create(this,R.raw.page);
+        try {
+//            mp.prepare();
+            mp.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(),"error in audio : "+e,Toast.LENGTH_SHORT).show();
+        }
+//        End Buzzer code
 
         next.setOnClickListener(v->{
             startActivity(new Intent(getApplicationContext(),CheckOut.class));
@@ -109,97 +156,141 @@ public class PopIt extends AppCompatActivity {
     }
     private void popAndmsg18() {
         pop18.setVisibility(View.INVISIBLE);
-        oneLine.setText(benefitsHeader.get(18));
-        description.setText(benefitsHeader.get(18));
+        oneLine.setText(benefitsHeader.get(0));
+        description.setText(benefitsDescription.get(0));
+        pop();
     }
     private void popAndmsg17() {
         pop17.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(17));
-        description.setText(benefitsHeader.get(17));
+        description.setText(benefitsDescription.get(17));
+        pop();
     }
     private void popAndmsg16() {
         pop16.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(16));
-        description.setText(benefitsHeader.get(16));
+        description.setText(benefitsDescription.get(16));
+        pop();
     }
     private void popAndmsg15() {
         pop15.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(15));
-        description.setText(benefitsHeader.get(15));
+        description.setText(benefitsDescription.get(15));
+        pop();
     }
     private void popAndmsg14() {
         pop14.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(14));
-        description.setText(benefitsHeader.get(14));
+        description.setText(benefitsDescription.get(14));
+        pop();
     }
     private void popAndmsg13() {
         pop13.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(13));
-        description.setText(benefitsHeader.get(13));
+        description.setText(benefitsDescription.get(13));
+        pop();
     }
     private void popAndmsg12() {
         pop12.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(12));
-        description.setText(benefitsHeader.get(12));
+        description.setText(benefitsDescription.get(12));
+        pop();
     }
     private void popAndmsg11() {
         pop11.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(11));
-        description.setText(benefitsHeader.get(11));
+        description.setText(benefitsDescription.get(11));
+        pop();
     }
     private void popAndmsg10() {
         pop10.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(10));
-        description.setText(benefitsHeader.get(10));
+        description.setText(benefitsDescription.get(10));
+        pop();
     }
     private void popAndmsg9() {
         pop9.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(9));
-        description.setText(benefitsHeader.get(9));
+        description.setText(benefitsDescription.get(9));
+        pop();
     }
     private void popAndmsg8() {
         pop8.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(8));
-        description.setText(benefitsHeader.get(8));
+        description.setText(benefitsDescription.get(8));
+        pop();
     }
     private void popAndmsg7() {
         pop7.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(7));
-        description.setText(benefitsHeader.get(7));
+        description.setText(benefitsDescription.get(7));
+        pop();
     }
     private void popAndmsg6() {
         pop6.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(6));
-        description.setText(benefitsHeader.get(6));
+        description.setText(benefitsDescription.get(6));
+        pop();
     }
     private void popAndmsg5() {
         pop5.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(5));
-        description.setText(benefitsHeader.get(5));
+        description.setText(benefitsDescription.get(5));
+        pop();
     }
     private void popAndmsg4() {
         pop4.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(4));
-        description.setText(benefitsHeader.get(4));
+        description.setText(benefitsDescription.get(4));
+        pop();
     }
 
     private void popAndmsg3() {
         pop3.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(3));
-        description.setText(benefitsHeader.get(3));
+        description.setText(benefitsDescription.get(3));
+        pop();
     }
 
     private void popAndmsg2() {
         pop2.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(2));
-        description.setText(benefitsHeader.get(2));
+        description.setText(benefitsDescription.get(2));
+        pop();
     }
 
     private void popAndmsg1() {
         pop1.setVisibility(View.INVISIBLE);
         oneLine.setText(benefitsHeader.get(1));
-        description.setText(benefitsHeader.get(1));
+        description.setText(benefitsDescription.get(1));
+        pop();
     }
+
+    private void pop() {
+        //        Buzzer code
+        MediaPlayer mp= MediaPlayer.create(this,R.raw.pop);
+        try {
+//            mp.prepare();
+            final VibrationEffect vibrationEffect1;
+
+            // this is the only type of the vibration which requires system version Oreo (API 26)
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+
+                // this effect creates the vibration of default amplitude for 1000ms(1 sec)
+                vibrationEffect1 = VibrationEffect.createOneShot(1000, VibrationEffect.DEFAULT_AMPLITUDE);
+
+                // it is safe to cancel other vibrations currently taking place
+                vibrator.cancel();
+                vibrator.vibrate(vibrationEffect1);
+            }
+            mp.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(),"error in audio : "+e,Toast.LENGTH_SHORT).show();
+        }
+//        End Buzzer code
+    }
+
     private void getData() {
 //        one liners
         benefitsHeader=new ArrayList<String>();

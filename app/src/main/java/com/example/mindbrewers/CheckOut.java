@@ -3,12 +3,14 @@ package com.example.mindbrewers;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -48,6 +50,18 @@ public class CheckOut extends AppCompatActivity {
             }
 
         }.start();
+
+        //                Buzzer code
+        MediaPlayer mp= MediaPlayer.create(this,R.raw.page);
+        try {
+//            mp.prepare();
+            mp.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(),"error in audio : "+e,Toast.LENGTH_SHORT).show();
+        }
+//        End Buzzer code
+
 
     }
 }
