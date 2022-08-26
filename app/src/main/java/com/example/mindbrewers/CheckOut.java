@@ -2,6 +2,7 @@ package com.example.mindbrewers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -26,6 +27,7 @@ public class CheckOut extends AppCompatActivity {
 
         payNow.setOnClickListener(v->{
             timer1.cancel();
+            startActivity(new Intent(getApplicationContext(),ManualDataEntry.class));
         });
 
 

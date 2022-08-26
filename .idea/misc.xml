@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Mindbrewers/app/src/main/res/layout/activity_adhaar_scan_data.xml" value="0.17147922998986828" />
         <entry key="..\:/Projects/Mindbrewers/app/src/main/res/layout/activity_check_out.xml" value="0.17147922998986828" />
         <entry key="..\:/Projects/Mindbrewers/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Projects/Mindbrewers/app/src/main/res/layout/activity_manual_data_entry.xml" value="0.136" />
         <entry key="..\:/Projects/Mindbrewers/app/src/main/res/layout/activity_pop_it.xml" value="0.264" />
       </map>
     </option>
