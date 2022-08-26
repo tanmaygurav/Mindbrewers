@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Summary">
+    tools:context=".PopitLanding">
     <ImageView
-        android:id="@+id/idSummary"
+        android:id="@+id/idPopitLanding"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/summary"/>
+        android:src="@drawable/popitlanding"
+        android:scaleType="centerCrop"/>
 
 </RelativeLayout>

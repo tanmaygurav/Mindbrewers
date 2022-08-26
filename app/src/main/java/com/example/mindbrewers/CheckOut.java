@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
@@ -16,6 +17,7 @@ public class CheckOut extends AppCompatActivity {
     private TextView timer;
     private Button payNow;
     private CountDownTimer timer1;
+    private ImageView payment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +25,9 @@ public class CheckOut extends AppCompatActivity {
         setContentView(R.layout.activity_check_out);
 
         timer=findViewById(R.id.idOfferTimer);
-        payNow=findViewById(R.id.idPayNow);
+        payment=findViewById(R.id.idPayment);
 
-        payNow.setOnClickListener(v->{
+        payment.setOnClickListener(v->{
             timer1.cancel();
             startActivity(new Intent(getApplicationContext(),ManualDataEntry.class));
         });

@@ -58,25 +58,25 @@ public class PopIt extends AppCompatActivity {
 
     private void popAndmsg4() {
         pop4.setVisibility(View.INVISIBLE);
-        oneLine.setText("Line 4");
-        description.setText("description 4");
+        oneLine.setText("Existing Illness Benefit");
+        description.setText("Treatment expense for pre-existing");
     }
 
     private void popAndmsg3() {
         pop3.setVisibility(View.INVISIBLE);
-        oneLine.setText("Line 3");
-        description.setText("description 3");
+        oneLine.setText("AYUSH or Alternate Medicine Treatment");
+        description.setText("All Homeopathy, Unani & Ayurvedic expenses covered.");
     }
 
     private void popAndmsg2() {
         pop2.setVisibility(View.INVISIBLE);
-        oneLine.setText("Line 2");
-        description.setText("description 2");
+        oneLine.setText("Network Discounts");
+        description.setText("Save on healthcare expenses, hospital room rent & more.");
     }
 
     private void popAndmsg1() {
         pop1.setVisibility(View.INVISIBLE);
-        oneLine.setText("Line 1");
-        description.setText("description 1");
+        oneLine.setText("Preventive Health Check-up");
+        description.setText("FREE health package with 61+ tests for 2 adults.");
     }
 }

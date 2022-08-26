@@ -6,27 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".CheckOut">
 
-    <TextView
-        android:id="@+id/CheckOutHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Check Out Page"
-        android:textSize="30dp"
-        />
+    <ImageView
+        android:id="@+id/idPayment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/payment"
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/idOfferTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Offer will last for 30 minutes"
-        android:layout_below="@id/CheckOutHeader"/>
-    <Button
-        android:id="@+id/idPayNow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pay Now"
         android:layout_alignParentBottom="true"
-        android:layout_margin="15dp"/>
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/red"/>
+
 
 </RelativeLayout>
